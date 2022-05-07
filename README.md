@@ -1,4 +1,4 @@
-<h2 align="center"> Este o Repositório é para os Desafios em grupo propostos em sala.<br>Disciplina de Linguagens da Programação<br>Professor Thiago Vasconcelos.</h2> 
+<h2 align="center"> Este Repositório é para os Desafios em grupo propostos em sala.<br>Disciplina de Linguagens da Programação<br>Professor Thiago Vasconcelos.</h2> 
 
 <div align="center">
 <img height="90em" src="https://www.celsonunes.com.br/wp-content/uploads/2018/05/java-logo.png"/>
