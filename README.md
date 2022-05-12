@@ -19,7 +19,7 @@
     
 <a href="https://www.linkedin.com/in/carlosaugustoabsantana/" target="_blank">Carlos Augusto Alves Bezerra de Santana</a>
 
-<a href="https://www.linkedin.com/in/ewerton-alexander-oliveira-batista-780869232/" target="_blank">Ewerton Alexander de Oliveira Batista</a>
+<a href="https://www.linkedin.com/in/ewerton-alexander-sfpc%E2%84%A2-780869232/" target="_blank">Ewerton Alexander de Oliveira Batista</a>
 
 <a href="https://www.linkedin.com/in/hufacundo/">Hugo Oliveira Facundo de Almeida</a>
 
