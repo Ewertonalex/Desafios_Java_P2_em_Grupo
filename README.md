@@ -58,9 +58,11 @@ Utilizamos a plataforma ClickUp para construir o nosso quadro Kaban e acompanhar
 
 
 <h2 align="center">Sprint's</h2>
+> Sprint Backlog    |   Status: Concluído ✅ <br><br>
 > Sprint 1️⃣   |   Status: Concluído ✅ <br><br>
-> Sprint 2️⃣   |   Status: Em Andamento 🅰 <br><br>
+> Sprint 2️⃣   |   Status: Concluído ✅ <br><br>
 > Sprint 3️⃣   |   Status: Concluído ✅ <br><br>
+> Sprint 4️⃣   |   Status: Concluído ✅ <br><br>
 
 ---
 
