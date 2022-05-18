@@ -10,16 +10,16 @@ import java.util.Scanner;
 public class KeepFile {
     public static void main(String[] args) throws FileNotFoundException {
 
-        String path = "C:GOLD_180422.txt";
+        String path = "C:\\GOLD_180422.txt";
 
         try (BufferedReader br = new BufferedReader(new FileReader(path))){
 
             String line = br.readLine();
-            char caractere = (char)br.read();
+            //char caractere = (char)br.read();
 
 
             while(line != null) {
-                System.out.println(line);
+                System.out.println(line.substring(0,2));
                 //System.out.println(caractere);
                 //caractere = (char)br.read();
 
