@@ -2,9 +2,9 @@ public class SecaoTraillerGeral {
     private String TipReg;
     private String QtdCartArq;
 
-    public SecaoTraillerGeral(String tipReg, String qtdCartArq) {
-        TipReg = tipReg;
-        QtdCartArq = qtdCartArq;
+    public SecaoTraillerGeral(String linhaArquivo) {
+        this.TipReg = linhaArquivo.substring(0, 0);
+        this.QtdCartArq = linhaArquivo.substring(1, 7);
     }
 
     public String getTipReg() {
