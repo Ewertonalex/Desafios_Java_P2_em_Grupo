@@ -14,25 +14,22 @@ public class SecaoLote {
     private String Overlay;
     private String Postagem;
 
-    public SecaoLote(String tipReg, String modeloDoPlastico, String numeroDoKit,
-                     String seqDoLote, String nomeDoPlastico, String tipoProcessamento,
-                     String tipoMovimento, String tipoDoCartao, String tipoDeGravacao,
-                     String corDeEntintamento, String tipoDeEnvelopamento, String etiquetaDeBloqueio,
-                     String overlay, String postagem) {
-        TipReg = tipReg;
-        ModeloDoPlastico = modeloDoPlastico;
-        NumeroDoKit = numeroDoKit;
-        SeqDoLote = seqDoLote;
-        NomeDoPlastico = nomeDoPlastico;
-        TipoProcessamento = tipoProcessamento;
-        TipoMovimento = tipoMovimento;
-        TipoDoCartao = tipoDoCartao;
-        TipoDeGravacao = tipoDeGravacao;
-        CorDeEntintamento = corDeEntintamento;
-        TipoDeEnvelopamento = tipoDeEnvelopamento;
-        EtiquetaDeBloqueio = etiquetaDeBloqueio;
-        Overlay = overlay;
-        Postagem = postagem;
+    public SecaoLote(String linhaArquivo) {
+        this.TipReg = linhaArquivo.substring(0,0);
+        this.ModeloDoPlastico = linhaArquivo.substring(1,3);
+        this.NumeroDoKit = linhaArquivo.substring(4,9);
+        this.SeqDoLote = linhaArquivo.substring(10,13);
+        this.NomeDoPlastico = linhaArquivo.substring(14,33);
+        this.TipoProcessamento = linhaArquivo.substring(34,35);
+        this.TipoMovimento = linhaArquivo.substring(36,37);
+        this.TipoDoCartao = linhaArquivo.substring(38,39);
+        this.TipoDeGravacao = linhaArquivo.substring(40,41);
+        this.CorDeEntintamento = linhaArquivo.substring(42,43);
+        this.TipoDeEnvelopamento = linhaArquivo.substring(44,45);
+        this.TipoDeEnderecamento = linhaArquivo.substring(46,47);
+        this.EtiquetaDeBloqueio = linhaArquivo.substring(48,49);
+        this.Overlay = linhaArquivo.substring(50,51);
+        this.Postagem = linhaArquivo.substring(52,53);
     }
 
     public String getTipReg() {

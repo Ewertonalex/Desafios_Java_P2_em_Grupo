@@ -8,11 +8,11 @@ public class SecaoGeral {
     private String DtMovto;
 
     public SecaoGeral(String linhaArquivo) {
-        this.TipRegHg = linhaArquivo.substring(0,0);
-        this.Banco = linhaArquivo.substring(1,4);
-        this.Nsp = linhaArquivo.substring(5,11);
-        this.SistOrig = linhaArquivo.substring(12,31);
-        this. DtMovto = linhaArquivo.substring(32,39);
+        this.TipRegHg = linhaArquivo.substring(0,1);
+        this.Banco = linhaArquivo.substring(13,32);
+        this.Nsp = linhaArquivo.substring(3,5);
+        this.SistOrig = linhaArquivo.substring(5,9);
+        this. DtMovto = linhaArquivo.substring(10,14);
     }
 
     public String getTipRegHg() {

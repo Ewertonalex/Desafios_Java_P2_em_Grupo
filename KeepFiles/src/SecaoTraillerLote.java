@@ -4,11 +4,11 @@ public class SecaoTraillerLote {
     private String Kit;
     private String QtdCartLote;
 
-    public SecaoTraillerLote(String tipReg, String modPlast, String kit, String qtdCartLote) {
-        TipReg = tipReg;
-        ModPlast = modPlast;
-        Kit = kit;
-        QtdCartLote = qtdCartLote;
+    public SecaoTraillerLote(String linhaArquivo) {
+        this.TipReg = linhaArquivo.substring(0 ,0);
+        this.ModPlast = linhaArquivo.substring(1 ,3);
+        this.Kit = linhaArquivo.substring(4, 9);
+        this.QtdCartLote = linhaArquivo.substring(10, 16);
     }
 
     public String getTipReg() {
