@@ -5,12 +5,12 @@ public class SecaoGeral {
     private String SistOrig;
     private String DtMovto;
 
-    public SecaoGeral(String tipRegHg, String banco, String nsp, String sistOrig, String dtMovto) {
-        this.TipRegHg = tipRegHg;
-        this.Banco = banco;
-        this.Nsp = nsp;
-        this.SistOrig = sistOrig;
-        this. DtMovto = dtMovto;
+    public SecaoGeral(String linhaArquivo) {
+        this.TipRegHg = linhaArquivo.substring(0,1);
+        this.Banco = linhaArquivo.substring(13,32);
+        this.Nsp = linhaArquivo.substring(3,5);
+        this.SistOrig = linhaArquivo.substring(5,9);
+        this. DtMovto = linhaArquivo.substring(10,14);
     }
 
     public String getTipRegHg() {
