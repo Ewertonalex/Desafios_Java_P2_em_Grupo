@@ -10,6 +10,7 @@ public class SecaoLote {
     private String TipoDeGravacao;
     private String CorDeEntintamento;
     private String TipoDeEnvelopamento;
+    private String TipoDeEnderecamento;
     private String EtiquetaDeBloqueio;
     private String Overlay;
     private String Postagem;
