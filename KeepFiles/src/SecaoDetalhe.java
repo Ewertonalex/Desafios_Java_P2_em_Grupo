@@ -37,7 +37,7 @@ public class SecaoDetalhe {
     private String CepAge;
     private String ContaCorrente;
     private String Tm;
-    private String Templete;
+    private String Template;
     private String Tm2;
     private String Complemento;
     private String CodPlast;
@@ -46,7 +46,7 @@ public class SecaoDetalhe {
     private String VlLimite;
     private String DiaVenc;
     private String CodigoBarras;
-    private String DevicienteVisual;
+    private String DeficienteVisual;
     private String Senha;
     private String Trilha01Icvv;
     private String Trilha02Icvv;
@@ -63,80 +63,69 @@ public class SecaoDetalhe {
     private String NumeroEndereco;
     private String ComplementoEndereco;
 
-    public SecaoDetalhe(String tipRegDetalhe, String modPlast, String kit, String seqCart, String linha01,
-                        String linha02, String linha03, String linha04, String linhaVerso, String trilha01,
-                        String trilha02, String trilha03, String qtdCartoes, String nome, String dadosEndereco,
-                        String bairro, String cidade, String uf, String cep, String nroAr, String cepAr,
-                        String codRegional, String codAgencia, String nmAbrAge, String tpUorPab, String codUorPab,
-                        String nmAbrPab, String folder, String codPab, String nomeAdicional, String enderecoAge,
-                        String bairroAge, String cidadeAge, String ufAge, String cepAge, String contaCorrente,
-                        String tm, String templete, String tm2, String complemento, String codPlast, String empresa,
-                        String foto, String vlLimite, String diaVenc, String codigoBarras, String devicienteVisual,
-                        String senha, String trilha01Icvv, String trilha02Icvv, String ccrAntigo, String codigoCartao,
-                        String nomeOrigemComercial, String matricula, String cargo, String documento, String ddd,
-                        String telefone, String vago, String panvas, String numeroEndereco, String complementoEndereco) {
-        TipRegDetalhe = tipRegDetalhe;
-        ModPlast = modPlast;
-        Kit = kit;
-        SeqCart = seqCart;
-        Linha01 = linha01;
-        Linha02 = linha02;
-        Linha03 = linha03;
-        Linha04 = linha04;
-        LinhaVerso = linhaVerso;
-        Trilha01 = trilha01;
-        Trilha02 = trilha02;
-        Trilha03 = trilha03;
-        QtdCartoes = qtdCartoes;
-        Nome = nome;
-        DadosEndereco = dadosEndereco;
-        Bairro = bairro;
-        Cidade = cidade;
-        Uf = uf;
-        Cep = cep;
-        NroAr = nroAr;
-        CepAr = cepAr;
-        CodRegional = codRegional;
-        CodAgencia = codAgencia;
-        NmAbrAge = nmAbrAge;
-        TpUorPab = tpUorPab;
-        CodUorPab = codUorPab;
-        NmAbrPab = nmAbrPab;
-        Folder = folder;
-        CodPab = codPab;
-        NomeAdicional = nomeAdicional;
-        EnderecoAge = enderecoAge;
-        BairroAge = bairroAge;
-        CidadeAge = cidadeAge;
-        UfAge = ufAge;
-        CepAge = cepAge;
-        ContaCorrente = contaCorrente;
-        Tm = tm;
-        Templete = templete;
-        Tm2 = tm2;
-        Complemento = complemento;
-        CodPlast = codPlast;
-        Empresa = empresa;
-        Foto = foto;
-        VlLimite = vlLimite;
-        DiaVenc = diaVenc;
-        CodigoBarras = codigoBarras;
-        DevicienteVisual = devicienteVisual;
-        Senha = senha;
-        Trilha01Icvv = trilha01Icvv;
-        Trilha02Icvv = trilha02Icvv;
-        CcrAntigo = ccrAntigo;
-        CodigoCartao = codigoCartao;
-        NomeOrigemComercial = nomeOrigemComercial;
-        Matricula = matricula;
-        Cargo = cargo;
-        Documento = documento;
-        Ddd = ddd;
-        Telefone = telefone;
-        Vago = vago;
-        Panvas = panvas;
-        NumeroEndereco = numeroEndereco;
-        ComplementoEndereco = complementoEndereco;
+    public SecaoDetalhe(String linhaArquivo) {
+        this.TipRegDetalhe = linhaArquivo.substring(0,0);
+        this.ModPlast = linhaArquivo.substring(1,3);
+        this.Kit = linhaArquivo.substring(4,9);
+        this.SeqCart = linhaArquivo.substring(10,15);
+        this.Linha01 = linhaArquivo.substring(16,55);
+        this.Linha02 = linhaArquivo.substring(56,95);
+        this.Linha03 = linhaArquivo.substring(96,135);
+        this.Linha04 = linhaArquivo.substring(136,175);
+        this.LinhaVerso = linhaArquivo.substring(176,215);
+        this.Trilha01 = linhaArquivo.substring(216,293);
+        this.Trilha02 = linhaArquivo.substring(294,332);
+        this.Trilha03 = linhaArquivo.substring(333,439);
+        this.QtdCartoes = linhaArquivo.substring(440,441);
+        this.Nome = linhaArquivo.substring(442,467);
+        this.DadosEndereco = linhaArquivo.substring(468,517);
+        this.Bairro = linhaArquivo.substring(518,537);
+        this.Cidade = linhaArquivo.substring(538,557);
+        this.Uf = linhaArquivo.substring(558,559);
+        this.Cep = linhaArquivo.substring(560,567);
+        this.NroAr = linhaArquivo.substring(568,576);
+        this.CepAr = linhaArquivo.substring(577,580);
+        this.CodRegional = linhaArquivo.substring(581,583);
+        this.CodAgencia = linhaArquivo.substring(584,587);
+        this.NmAbrAge = linhaArquivo.substring(588,602);
+        this.TpUorPab = linhaArquivo.substring(603,605);
+        this.CodUorPab = linhaArquivo.substring(606,609);
+        this.NmAbrPab = linhaArquivo.substring(610,624);
+        this.Folder = linhaArquivo.substring(625,633);
+        this.CodPab = linhaArquivo.substring(634,635);
+        this.NomeAdicional = linhaArquivo.substring(636,680);
+        this.EnderecoAge = linhaArquivo.substring(681,730);
+        this.BairroAge = linhaArquivo.substring(731,750);
+        this.CidadeAge = linhaArquivo.substring(751,770);
+        this.UfAge = linhaArquivo.substring(771,772);
+        this.CepAge = linhaArquivo.substring(773,780);
+        this.ContaCorrente = linhaArquivo.substring(781,796);
+        this.Tm = linhaArquivo.substring(797,799);
+        this.Template = linhaArquivo.substring(800,809);
+        this.Tm2 = linhaArquivo.substring(810,810);
+        this.Complemento = linhaArquivo.substring(811,830);
+        this.CodPlast = linhaArquivo.substring(831,833);
+        this.Empresa = linhaArquivo.substring(834,852);
+        this.Foto = linhaArquivo.substring(853,860);
+        this.VlLimite = linhaArquivo.substring(861,872);
+        this.DiaVenc = linhaArquivo.substring(871,874);
+        this.CodigoBarras = linhaArquivo.substring(875,884);
+        this.DeficienteVisual = linhaArquivo.substring(885,885);
+        this.Senha = linhaArquivo.substring(886,901);
+        this.Trilha01Icvv = linhaArquivo.substring(902,979);
+        this.Trilha02Icvv = linhaArquivo.substring(980,1018);
+        this.CcrAntigo = linhaArquivo.substring(1019,1030);
+        this.CodigoCartao = linhaArquivo.substring(1031,1042);
+        this.NomeOrigemComercial = linhaArquivo.substring(1043,1062);
+        this.Matricula = linhaArquivo.substring(1063,1082);
+        this.Cargo = linhaArquivo.substring(1083,1112);
+        this.Documento = linhaArquivo.substring(1113,1123);
+        this.Ddd = linhaArquivo.substring(1124,1125);
+        this.Telefone = linhaArquivo.substring(1126,1134);
+        this.Vago = linhaArquivo.substring(1135,1139);
+        this.Panvas = linhaArquivo.substring(1140,1155);
+        this.NumeroEndereco = linhaArquivo.substring(1156,1165);
+        this.ComplementoEndereco = linhaArquivo.substring(1166,1195);
     }
 
     public String getTipRegDetalhe() {
@@ -436,11 +425,11 @@ public class SecaoDetalhe {
     }
 
     public String getTemplete() {
-        return Templete;
+        return Template;
     }
 
     public void setTemplete(String templete) {
-        Templete = templete;
+        Template = templete;
     }
 
     public String getTm2() {
@@ -508,11 +497,11 @@ public class SecaoDetalhe {
     }
 
     public String getDevicienteVisual() {
-        return DevicienteVisual;
+        return DeficienteVisual;
     }
 
     public void setDevicienteVisual(String devicienteVisual) {
-        DevicienteVisual = devicienteVisual;
+        DeficienteVisual = devicienteVisual;
     }
 
     public String getSenha() {
