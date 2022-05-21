@@ -17,7 +17,6 @@ public class KeepFile {
             while(line != null) {
 
 
-
                 if(line.substring(0,1).equals("0")){ //Caso o número inicial da linha seja 0
                     SecaoGeral secaoGeral = new SecaoGeral(line);
                     System.out.println(secaoGeral.getBanco());
