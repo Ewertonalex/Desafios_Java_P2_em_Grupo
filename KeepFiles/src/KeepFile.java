@@ -9,6 +9,7 @@ public class KeepFile {
 
         String path = "C:\\GOLD_180422.txt";
         ArrayList<String> listaErros = new ArrayList<String>();
+
         try (BufferedReader br = new BufferedReader(new FileReader(path))){
 
             String line = br.readLine();

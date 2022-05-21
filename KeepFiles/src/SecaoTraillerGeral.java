@@ -27,6 +27,28 @@ public class SecaoTraillerGeral {
 
     public void validarLinha(SecaoTraillerGeral secaoTraillerGeral, ArrayList<String> listaErros){
 
+        if(isInteger(secaoTraillerGeral.TipReg)){
+            try{
+                int i = Integer.parseInt(secaoTraillerGeral.TipReg);
+            }catch (Exception e){
+                e.getMessage();
+                listaErros.add("Linha secao: ["+secaoTraillerGeral.getTipReg()+"] - Esperava int e contém String - valor: "+secaoTraillerGeral.getTipReg());
+            }
+
+            listaErros.add(("Problema no arquivo de embossing, na seção traillerGeral, no campo TipReg."));
+
+        }else if(isInteger(secaoTraillerGeral.QtdCartArq)){
+            try{
+                int i = Integer.parseInt(secaoTraillerGeral.QtdCartArq);
+            }catch (Exception e){
+                e.getMessage();
+                listaErros.add("Linha secao: ["+secaoTraillerGeral.getQtdCartArq()+"] - Esperava int e contém String - valor: "+secaoTraillerGeral.getQtdCartArq());
+
+            }
+
+            listaErros.add(("Problema no arquivo de embossing, na seção traillerGeral, no campo QtdCartArq."));
+        }
+
     }
 
     private static boolean isInteger(String str) {
