@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class SecaoTraillerGeral {
     private String TipReg;
     private String QtdCartArq;
@@ -21,5 +23,14 @@ public class SecaoTraillerGeral {
 
     public void setQtdCartArq(String qtdCartArq) {
         QtdCartArq = qtdCartArq;
+    }
+
+    public void validarLinha(SecaoTraillerGeral secaoTraillerGeral, ArrayList<String> listaErros){
+
+    }
+
+    private static boolean isInteger(String str) {
+
+        return str != null && str.matches("[0-9]*");
     }
 }

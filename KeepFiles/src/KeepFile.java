@@ -25,13 +25,25 @@ public class KeepFile {
                     System.out.println(secaoGeral.getDtMovto());
 
                     secaoGeral.validarLinha(secaoGeral,listaErros);
-                }else if(line.substring(0,1).equals("1")){ //Caso o número inicial da linha seja 1
+                }else if(line.substring(0,1).equals("1")){//Caso o número inicial da linha seja 1
+                    SecaoLote secaoLote = new SecaoLote(line);
+
+                    secaoLote.validarLinha(secaoLote, listaErros);
 
                 }else if(line.substring(0,1).equals("2")){ //Caso o número inicial da linha seja 2
+                    SecaoDetalhe secaoDetalhe = new SecaoDetalhe(line);
+
+                    secaoDetalhe.validarLinha(secaoDetalhe, listaErros);
 
                 }else if(line.substring(0,1).equals("3")){ //Caso o número inicial da linha seja 3
+                    SecaoTraillerLote secaoTraillerLote = new SecaoTraillerLote(line);
+
+                    secaoTraillerLote.validarLinha(secaoTraillerLote, listaErros);
 
                 }else if(line.substring(0,1).equals("9")){ //Caso o número inicial da linha seja 9
+                    SecaoTraillerGeral secaoTraillerGeral = new SecaoTraillerGeral(line);
+
+                    secaoTraillerGeral.validarLinha(secaoTraillerGeral, listaErros);
 
                 }else{
                     System.out.println("Erro no arquivo na linha " + line); // Exibindo erro e imprimindo a linha que contém o erro

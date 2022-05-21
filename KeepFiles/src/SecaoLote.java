@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class SecaoLote {
     private String TipReg;
     private String ModeloDoPlastico;
@@ -143,5 +145,84 @@ public class SecaoLote {
 
     public void setPostagem(String postagem) {
         Postagem = postagem;
+    }
+
+    public void validarLinha(SecaoLote secaoLote, ArrayList<String> listaErros){
+        if(isInteger(secaoLote.TipReg)){
+            try{
+                int i = Integer.parseInt(secaoLote.TipReg);
+            }catch (Exception e){
+                e.getMessage();
+                listaErros.add("Linha secao: ["+secaoLote.getTipReg()+"] - Esperava int e contém String - valor: "+secaoLote.getTipReg());
+            }
+
+            listaErros.add(("Problema no arquivo de embossing, na seção geral, no campo TipReg."));
+
+        }else if(isInteger(secaoLote.ModeloDoPlastico)){
+            try{
+                int i = Integer.parseInt(secaoLote.ModeloDoPlastico);
+            }catch (Exception e){
+                e.getMessage();
+                listaErros.add("Linha secao: ["+secaoLote.getModeloDoPlastico()+"] - Esperava int e contém String - valor: "+secaoLote.getModeloDoPlastico());
+
+            }
+
+            listaErros.add(("Problema no arquivo de embossing, na seção geral, no campo ModeloDoPlastico."));
+        }else if(isInteger(secaoLote.NumeroDoKit)){
+            try{
+                int i = Integer.parseInt(secaoLote.NumeroDoKit);
+            }catch (Exception e){
+                e.getMessage();
+                listaErros.add("Linha secao: ["+secaoLote.getNumeroDoKit()+"] - Esperava int e contém String - valor: "+secaoLote.getNumeroDoKit());
+
+            }
+
+            listaErros.add(("Problema no arquivo de embossing, na seção geral, no campo NumeroDoKit."));
+        }else if(isInteger(secaoLote.SeqDoLote)){
+            try{
+                int i = Integer.parseInt(secaoLote.SeqDoLote);
+            }catch (Exception e){
+                e.getMessage();
+                listaErros.add("Linha secao: ["+secaoLote.getSeqDoLote()+"] - Esperava int e contém String - valor: "+secaoLote.getSeqDoLote());
+
+            }
+
+            listaErros.add(("Problema no arquivo de embossing, na seção geral, no campo SeqDoLote."));
+        }else if(isInteger(secaoLote.NomeDoPlastico)){
+            try{
+                int i = Integer.parseInt(secaoLote.NomeDoPlastico);
+            }catch (Exception e){
+                e.getMessage();
+                listaErros.add("Linha secao: ["+secaoLote.getNomeDoPlastico()+"] - Esperava int e contém String - valor: "+secaoLote.getNomeDoPlastico());
+
+            }
+
+            listaErros.add(("Problema no arquivo de embossing, na seção geral, no campo NomeDoPlastico."));
+        }else if(isInteger(secaoLote.TipoProcessamento)){
+            try{
+                int i = Integer.parseInt(secaoLote.TipoProcessamento);
+            }catch (Exception e){
+                e.getMessage();
+                listaErros.add("Linha secao: ["+secaoLote.getTipoProcessamento()+"] - Esperava int e contém String - valor: "+secaoLote.getTipoProcessamento());
+
+            }
+
+            listaErros.add(("Problema no arquivo de embossing, na seção geral, no campo TipoProcessamento."));
+        }else if(isInteger(secaoLote.TipoMovimento)){
+            try{
+                int i = Integer.parseInt(secaoLote.TipoMovimento);
+            }catch (Exception e){
+                e.getMessage();
+                listaErros.add("Linha secao: ["+secaoLote.getTipoMovimento()+"] - Esperava int e contém String - valor: "+secaoLote.getTipoMovimento());
+
+            }
+
+            listaErros.add(("Problema no arquivo de embossing, na seção geral, no campo TipoMovimento."));
+        }
+    }
+
+    private static boolean isInteger(String str) {
+
+        return str != null && str.matches("[0-9]*");
     }
 }

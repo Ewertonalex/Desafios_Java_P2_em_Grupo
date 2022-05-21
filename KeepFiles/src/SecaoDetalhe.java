@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class SecaoDetalhe {
 
     private String TipRegDetalhe;
@@ -622,5 +624,14 @@ public class SecaoDetalhe {
 
     public void setComplementoEndereco(String complementoEndereco) {
         ComplementoEndereco = complementoEndereco;
+    }
+
+    public void validarLinha(SecaoDetalhe secaoDetalhe, ArrayList<String> listaErros){
+
+    }
+
+    private static boolean isInteger(String str) {
+
+        return str != null && str.matches("[0-9]*");
     }
 }

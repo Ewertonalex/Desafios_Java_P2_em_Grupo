@@ -56,15 +56,56 @@ public class SecaoGeral {
     }
 
     public void validarLinha(SecaoGeral secaoGeral, ArrayList<String> listaErros) {
-        if(isInteger(secaoGeral.Nsp)){
+        if(isInteger(secaoGeral.TipRegHg)){
+            try{
+                int i = Integer.parseInt(secaoGeral.TipRegHg);
+            }catch (Exception e){
+                e.getMessage();
+                listaErros.add("Linha secao: ["+secaoGeral.getTipRegHg()+"] - Esperava int e contém String - valor: "+secaoGeral.getTipRegHg());
+            }
+
+            listaErros.add(("Problema no arquivo de embossing, na seção geral, no campo TipRegHg."));
+
+        }else if(isInteger(secaoGeral.Banco)){
+            try{
+                int i = Integer.parseInt(secaoGeral.Banco);
+            }catch (Exception e){
+                e.getMessage();
+                listaErros.add("Linha secao: ["+secaoGeral.getBanco()+"] - Esperava int e contém String - valor: "+secaoGeral.getBanco());
+
+            }
+
+            listaErros.add(("Problema no arquivo de embossing, na seção geral, no campo Banco."));
+        }else if(isInteger(secaoGeral.Nsp)){
             try{
                 int i = Integer.parseInt(secaoGeral.Nsp);
             }catch (Exception e){
                 e.getMessage();
-                listaErros.add("Linha secao: ["+secaoGeral.getTipRegHg()+"] - Esperava int e contem String - valor: "+secaoGeral.getNsp());
+                listaErros.add("Linha secao: ["+secaoGeral.getNsp()+"] - Esperava int e contém String - valor: "+secaoGeral.getNsp());
+
             }
 
-            listaErros.add(("Problema no arquivo XTOP, na secao geral, na com campo NSP "));
+            listaErros.add(("Problema no arquivo de embossing, na seção geral, no campo Nsp."));
+        }else if(isInteger(secaoGeral.SistOrig)){
+            try{
+                int i = Integer.parseInt(secaoGeral.SistOrig);
+            }catch (Exception e){
+                e.getMessage();
+                listaErros.add("Linha secao: ["+secaoGeral.getSistOrig()+"] - Esperava int e contém String - valor: "+secaoGeral.getSistOrig());
+
+            }
+
+            listaErros.add(("Problema no arquivo de embossing, na seção geral, no campo SistOrig."));
+        }else if(isInteger(secaoGeral.DtMovto)){
+            try{
+                int i = Integer.parseInt(secaoGeral.DtMovto);
+            }catch (Exception e){
+                e.getMessage();
+                listaErros.add("Linha secao: ["+secaoGeral.getDtMovto()+"] - Esperava int e contém String - valor: "+secaoGeral.getDtMovto());
+
+            }
+
+            listaErros.add(("Problema no arquivo de embossing, na seção geral, no campo DtMovto."));
         }
 
         secaoGeral.getNsp(); //voces precisam buscar como validar campo numerico.

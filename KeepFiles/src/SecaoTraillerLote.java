@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class SecaoTraillerLote {
     private String TipReg;
     private String ModPlast;
@@ -41,5 +43,13 @@ public class SecaoTraillerLote {
 
     public void setQtdCartLote(String qtdCartLote) {
         QtdCartLote = qtdCartLote;
+    }
+
+    public void validarLinha(SecaoTraillerLote secaoTraillerLote, ArrayList<String> listaErros){
+
+    }
+
+    private static boolean isInteger(String str) {
+        return str != null && str.matches("[0-9]*");
     }
 }
