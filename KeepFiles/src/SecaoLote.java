@@ -16,21 +16,21 @@ public class SecaoLote {
     private String Postagem;
 
     public SecaoLote(String linhaArquivo) {
-        this.TipReg = linhaArquivo.substring(0,0);
-        this.ModeloDoPlastico = linhaArquivo.substring(1,3);
-        this.NumeroDoKit = linhaArquivo.substring(4,9);
-        this.SeqDoLote = linhaArquivo.substring(10,13);
-        this.NomeDoPlastico = linhaArquivo.substring(14,33);
-        this.TipoProcessamento = linhaArquivo.substring(34,35);
-        this.TipoMovimento = linhaArquivo.substring(36,37);
-        this.TipoDoCartao = linhaArquivo.substring(38,39);
-        this.TipoDeGravacao = linhaArquivo.substring(40,41);
-        this.CorDeEntintamento = linhaArquivo.substring(42,43);
-        this.TipoDeEnvelopamento = linhaArquivo.substring(44,45);
-        this.TipoDeEnderecamento = linhaArquivo.substring(46,47);
-        this.EtiquetaDeBloqueio = linhaArquivo.substring(48,49);
-        this.Overlay = linhaArquivo.substring(50,51);
-        this.Postagem = linhaArquivo.substring(52,53);
+        this.TipReg = linhaArquivo.substring(0,1);
+        this.ModeloDoPlastico = linhaArquivo.substring(1,4);
+        this.NumeroDoKit = linhaArquivo.substring(4,10);
+        this.SeqDoLote = linhaArquivo.substring(10,14);
+        this.NomeDoPlastico = linhaArquivo.substring(14,34);
+        this.TipoProcessamento = linhaArquivo.substring(34,36);
+        this.TipoMovimento = linhaArquivo.substring(36,38);
+        this.TipoDoCartao = linhaArquivo.substring(38,40);
+        this.TipoDeGravacao = linhaArquivo.substring(40,42);
+        this.CorDeEntintamento = linhaArquivo.substring(42,44);
+        this.TipoDeEnvelopamento = linhaArquivo.substring(44,46);
+        this.TipoDeEnderecamento = linhaArquivo.substring(46,48);
+        this.EtiquetaDeBloqueio = linhaArquivo.substring(48,50);
+        this.Overlay = linhaArquivo.substring(50,52);
+        this.Postagem = linhaArquivo.substring(52,54);
     }
 
     public String getTipReg() {

@@ -14,17 +14,28 @@ public class KeepFile {
             String line = br.readLine();
 
             while(line != null) {
-                if(line.substring(0,1).equals("0")){
+
+
+
+                if(line.substring(0,1).equals("0")){ //Caso o número inicial da linha seja 0
                     SecaoGeral secaoGeral = new SecaoGeral(line);
                     System.out.println(secaoGeral.getBanco());
+                    System.out.println(secaoGeral.getNsp());
                     System.out.println(secaoGeral.getSistOrig());
+                    System.out.println(secaoGeral.getDtMovto());
 
                     secaoGeral.validarLinha(secaoGeral,listaErros);
-                }else
-                    if(line.substring(0,1).equals("1")){
+                }else if(line.substring(0,1).equals("1")){ //Caso o número inicial da linha seja 1
 
-                    }
-//                System.out.println(line.substring(0,2));
+                }else if(line.substring(0,1).equals("2")){ //Caso o número inicial da linha seja 2
+
+                }else if(line.substring(0,1).equals("3")){ //Caso o número inicial da linha seja 3
+
+                }else if(line.substring(0,1).equals("9")){ //Caso o número inicial da linha seja 9
+
+                }else{
+                    System.out.println("Erro no arquivo na linha " + line); // Exibindo erro e imprimindo a linha que contém o erro
+                }
 
                 line = br.readLine();
             }

@@ -5,10 +5,10 @@ public class SecaoTraillerLote {
     private String QtdCartLote;
 
     public SecaoTraillerLote(String linhaArquivo) {
-        this.TipReg = linhaArquivo.substring(0 ,0);
-        this.ModPlast = linhaArquivo.substring(1 ,3);
-        this.Kit = linhaArquivo.substring(4, 9);
-        this.QtdCartLote = linhaArquivo.substring(10, 16);
+        this.TipReg = linhaArquivo.substring(0 ,1);
+        this.ModPlast = linhaArquivo.substring(1 ,4);
+        this.Kit = linhaArquivo.substring(4, 10);
+        this.QtdCartLote = linhaArquivo.substring(10, 17);
     }
 
     public String getTipReg() {

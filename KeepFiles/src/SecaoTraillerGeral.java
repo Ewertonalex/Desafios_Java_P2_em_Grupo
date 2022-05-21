@@ -3,8 +3,8 @@ public class SecaoTraillerGeral {
     private String QtdCartArq;
 
     public SecaoTraillerGeral(String linhaArquivo) {
-        this.TipReg = linhaArquivo.substring(0, 0);
-        this.QtdCartArq = linhaArquivo.substring(1, 7);
+        this.TipReg = linhaArquivo.substring(0, 1);
+        this.QtdCartArq = linhaArquivo.substring(1, 8);
     }
 
     public String getTipReg() {
