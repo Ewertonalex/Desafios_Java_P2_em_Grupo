@@ -825,11 +825,155 @@ public class SecaoDetalhe {
             int i;
             for (i = 0; i<arr.length; i++)
                 if (Character.isWhitespace(arr[i])){
-                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo DadosCidade.");
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Cidade.");
                 }
         }catch (Exception e){
             e.getMessage();
             listaErros.add("Linha secao: ["+secaoDetalhe.getCidade()+"]");
+        }
+
+        try{
+            char[] arr = getUf().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Uf.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getUf()+"]");
+        }
+
+        try{
+            char[] arr = getCep().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Cep.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getCep()+"]");
+        }
+
+        try{
+            char[] arr = getNroAr().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo NroAr.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getNroAr()+"]");
+        }
+
+        try{
+            char[] arr = getCepAr().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo CepAr.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getCepAr()+"]");
+        }
+
+        try{
+            char[] arr = getCodRegional().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo CodRegional.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getCodRegional()+"]");
+        }
+
+        try{
+            char[] arr = getCodAgencia().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo CodAgencia.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getCodAgencia()+"]");
+        }
+
+        try{
+            char[] arr = getNmAbrAge().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo NmAbrAge.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getNmAbrAge()+"]");
+        }
+
+        try{
+            char[] arr = getTpUorPab().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo TpUorPab.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getTpUorPab()+"]");
+        }
+
+        try{
+            char[] arr = getCodUorPab().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo CodUorPab.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getCodUorPab()+"]");
+        }
+
+        try{
+            char[] arr = getNmAbrPab().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo NmAbrPab.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getNmAbrPab()+"]");
+        }
+
+        try{
+            char[] arr = getFolder().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Folder.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getFolder()+"]");
+        }
+
+        try{
+            char[] arr = getCodPab().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo CodPab.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getCodPab()+"]");
         }
 
 
