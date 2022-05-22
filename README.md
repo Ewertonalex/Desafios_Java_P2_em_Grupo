@@ -54,7 +54,7 @@ O nosso projeto foi desenvolvido através de uma construção coletiva utilizand
 ### Dailys:
 Nossas Dailys são realizadas de segunda a sexta-feira, de forma remota, com duração máxima de 15 minutos, sempre após a aula do dia na UNIESP.
 ### ClickUp:
-Utilizamos a plataforma ClickUp para construir o nosso quadro Kaban e acompanhar a evolução do nosso projeto, onde foram divididas as tarefas pelo grupo estruturando as Sprint's em tasks e definindo as colunas em  "fazer", "fazendo", "feito", "testando" e "testado".
+Utilizamos a plataforma ClickUp para construir o nosso quadro Kanban e acompanhar a evolução do nosso projeto, onde foram divididas as tarefas pelo grupo estruturando as Sprint's em tasks e definindo as colunas em  "fazer", "fazendo", "feito", "testando" e "testado".
 
 
 <h2 align="center">Sprint's</h2>
