@@ -733,7 +733,7 @@ public class SecaoDetalhe {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getLinhaVerso()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getLinhaVerso()+"]");
         }
 
         try{
@@ -745,7 +745,7 @@ public class SecaoDetalhe {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getTrilha01()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getTrilha01()+"]");
         }
 
         try{

@@ -162,7 +162,7 @@ public class SecaoLote {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoLote.getTipReg()+"]");
+            listaErros.add("Linha secao: ["+secaoLote.getTipReg()+"]");
         }
 
         try{
@@ -174,7 +174,7 @@ public class SecaoLote {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoLote.getModeloDoPlastico()+"]");
+            listaErros.add("Linha secao: ["+secaoLote.getModeloDoPlastico()+"]");
         }
 
         try{
@@ -186,7 +186,7 @@ public class SecaoLote {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoLote.getNumeroDoKit()+"]");
+            listaErros.add("Linha secao: ["+secaoLote.getNumeroDoKit()+"]");
         }
 
         try{
@@ -198,7 +198,7 @@ public class SecaoLote {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoLote.getSeqDoLote()+"]");
+            listaErros.add("Linha secao: ["+secaoLote.getSeqDoLote()+"]");
         }
 
         try{
@@ -210,7 +210,7 @@ public class SecaoLote {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoLote.getNomeDoPlastico()+"]");
+            listaErros.add("Linha secao: ["+secaoLote.getNomeDoPlastico()+"]");
         }
 
         try{
@@ -222,7 +222,7 @@ public class SecaoLote {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoLote.getTipoProcessamento()+"]");
+            listaErros.add("Linha secao: ["+secaoLote.getTipoProcessamento()+"]");
         }
 
         try{
@@ -234,7 +234,7 @@ public class SecaoLote {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoLote.getTipoMovimento()+"]");
+            listaErros.add("Linha secao: ["+secaoLote.getTipoMovimento()+"]");
         }
 
         try{
@@ -246,7 +246,7 @@ public class SecaoLote {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoLote.getTipoDoCartao()+"]");
+            listaErros.add("Linha secao: ["+secaoLote.getTipoDoCartao()+"]");
         }
 
         try{
@@ -258,7 +258,7 @@ public class SecaoLote {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoLote.getTipoDeGravacao()+"]");
+            listaErros.add("Linha secao: ["+secaoLote.getTipoDeGravacao()+"]");
         }
 
         try{
@@ -270,7 +270,7 @@ public class SecaoLote {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoLote.getCorDeEntintamento()+"]");
+            listaErros.add("Linha secao: ["+secaoLote.getCorDeEntintamento()+"]");
         }
 
         try{
@@ -282,7 +282,7 @@ public class SecaoLote {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoLote.getTipoDeEnvelopamento()+"]");
+            listaErros.add("Linha secao: ["+secaoLote.getTipoDeEnvelopamento()+"]");
         }
 
         try{
@@ -294,7 +294,7 @@ public class SecaoLote {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoLote.getTipoDeEnderecamento()+"]");
+            listaErros.add("Linha secao: ["+secaoLote.getTipoDeEnderecamento()+"]");
         }
 
         try{
@@ -306,7 +306,7 @@ public class SecaoLote {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoLote.getEtiquetaDeBloqueio()+"]");
+            listaErros.add("Linha secao: ["+secaoLote.getEtiquetaDeBloqueio()+"]");
         }
 
         try{
@@ -318,7 +318,7 @@ public class SecaoLote {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoLote.getOverlay()+"]");
+            listaErros.add("Linha secao: ["+secaoLote.getOverlay()+"]");
         }
         
         try{
@@ -330,8 +330,9 @@ public class SecaoLote {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoLote.getPostagem()+"]");
+            listaErros.add("Linha secao: ["+secaoLote.getPostagem()+"]");
         }
+
 
 
     }
