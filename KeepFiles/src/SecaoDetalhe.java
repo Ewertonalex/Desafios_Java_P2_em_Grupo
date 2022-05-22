@@ -1060,6 +1060,30 @@ public class SecaoDetalhe {
             listaErros.add("Linha secao: ["+secaoDetalhe.getContaCorrente()+"]");
         }
 
+        try{
+            char[] arr = getTm().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Tm.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getTm()+"]");
+        }
+
+        try{
+            char[] arr = getTemplate().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Template.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getTemplate()+"]");
+        }
+
 
 
     }
