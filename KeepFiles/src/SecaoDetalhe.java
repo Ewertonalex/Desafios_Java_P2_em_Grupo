@@ -976,6 +976,90 @@ public class SecaoDetalhe {
             listaErros.add("Linha secao: ["+secaoDetalhe.getCodPab()+"]");
         }
 
+        try{
+            char[] arr = getNomeAdicional().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo NomeAdicional.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getNomeAdicional()+"]");
+        }
+
+        try{
+            char[] arr = getEnderecoAge().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo EnderecoAge.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getEnderecoAge()+"]");
+        }
+
+        try{
+            char[] arr = getBairroAge().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo BairroAge.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getBairroAge()+"]");
+        }
+
+        try{
+            char[] arr = getCidadeAge().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo CidadeAge.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getCidadeAge()+"]");
+        }
+
+        try{
+            char[] arr = getUfAge().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo UfAge.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getUfAge()+"]");
+        }
+
+        try{
+            char[] arr = getCepAge().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo CepAge.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getCepAge()+"]");
+        }
+
+        try{
+            char[] arr = getContaCorrente().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo ContaCorrente.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoDetalhe.getContaCorrente()+"]");
+        }
+
 
 
     }
