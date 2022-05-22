@@ -155,12 +155,14 @@ public class SecaoLote {
         if(isInteger(secaoLote.TipReg)){
             try{
                 int i = Integer.parseInt(secaoLote.TipReg);
+
             }catch (Exception e){
                 e.getMessage();
+                listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo TipReg."));
                 listaErros.add("Linha secao: ["+secaoLote.getTipReg()+"] - Esperava int e contém String - valor: "+secaoLote.getTipReg());
             }
 
-            listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo TipReg."));
+            //listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo TipReg."));
 
         }else if(isInteger(secaoLote.ModeloDoPlastico)){
             try{
@@ -171,7 +173,7 @@ public class SecaoLote {
 
             }
 
-            listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo ModeloDoPlastico."));
+            //listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo ModeloDoPlastico."));
         }else if(isInteger(secaoLote.NumeroDoKit)){
             try{
                 int i = Integer.parseInt(secaoLote.NumeroDoKit);
@@ -181,7 +183,7 @@ public class SecaoLote {
 
             }
 
-            listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo NumeroDoKit."));
+            //listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo NumeroDoKit."));
         }else if(isInteger(secaoLote.SeqDoLote)){
             try{
                 int i = Integer.parseInt(secaoLote.SeqDoLote);
@@ -191,7 +193,7 @@ public class SecaoLote {
 
             }
 
-            listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo SeqDoLote."));
+            //listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo SeqDoLote."));
         }else if(isInteger(secaoLote.NomeDoPlastico)){
             try{
                 int i = Integer.parseInt(secaoLote.NomeDoPlastico);
@@ -201,7 +203,7 @@ public class SecaoLote {
 
             }
 
-            listaErros.add(("Problema no arquivo de embossing, na sseção Lote, no campo NomeDoPlastico."));
+            //listaErros.add(("Problema no arquivo de embossing, na sseção Lote, no campo NomeDoPlastico."));
         }else if(isInteger(secaoLote.TipoProcessamento)){
             try{
                 int i = Integer.parseInt(secaoLote.TipoProcessamento);
@@ -211,7 +213,7 @@ public class SecaoLote {
 
             }
 
-            listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo TipoProcessamento."));
+            //listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo TipoProcessamento."));
         }else if(isInteger(secaoLote.TipoMovimento)){
             try{
                 int i = Integer.parseInt(secaoLote.TipoMovimento);
@@ -221,7 +223,7 @@ public class SecaoLote {
 
             }
 
-            listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo TipoMovimento."));
+            //listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo TipoMovimento."));
         }else if(isInteger(secaoLote.TipoDoCartao)){
             try{
                 int i = Integer.parseInt(secaoLote.TipoDoCartao);
@@ -231,7 +233,7 @@ public class SecaoLote {
 
             }
 
-            listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo TipoDoCartao."));
+            //listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo TipoDoCartao."));
         }else if(isInteger(secaoLote.TipoDeGravacao)){
             try{
                 int i = Integer.parseInt(secaoLote.TipoDeGravacao);
@@ -241,7 +243,7 @@ public class SecaoLote {
 
             }
 
-            listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo TipoDeGravacao."));
+            //listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo TipoDeGravacao."));
         }else if(isInteger(secaoLote.CorDeEntintamento)){
             try{
                 int i = Integer.parseInt(secaoLote.CorDeEntintamento);
@@ -251,7 +253,7 @@ public class SecaoLote {
 
             }
 
-            listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo CorDeEntintamento."));
+            //listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo CorDeEntintamento."));
         }else if(isInteger(secaoLote.TipoDeEnvelopamento)){
             try{
                 int i = Integer.parseInt(secaoLote.TipoDeEnvelopamento);
@@ -271,7 +273,7 @@ public class SecaoLote {
 
             }
 
-            listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo TipoDeEnderecamento."));
+            //listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo TipoDeEnderecamento."));
         }else if(isInteger(secaoLote.EtiquetaDeBloqueio)){
             try{
                 int i = Integer.parseInt(secaoLote.EtiquetaDeBloqueio);
@@ -281,7 +283,7 @@ public class SecaoLote {
 
             }
 
-            listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo EtiquetaDeBloqueio."));
+            //listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo EtiquetaDeBloqueio."));
         }else if(isInteger(secaoLote.Overlay)){
             try{
                 int i = Integer.parseInt(secaoLote.Overlay);
@@ -291,7 +293,7 @@ public class SecaoLote {
 
             }
 
-            listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo Overlay."));
+            //listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo Overlay."));
         }else if(isInteger(secaoLote.Postagem)){
             try{
                 int i = Integer.parseInt(secaoLote.Postagem);
@@ -301,7 +303,7 @@ public class SecaoLote {
 
             }
 
-            listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo Postagem."));
+            //listaErros.add(("Problema no arquivo de embossing, na seção Lote, no campo Postagem."));
         }
 
 

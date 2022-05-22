@@ -1,3 +1,5 @@
+import java.text.CharacterIterator;
+import java.text.StringCharacterIterator;
 import java.util.ArrayList;
 
 public class SecaoGeral {
@@ -59,23 +61,25 @@ public class SecaoGeral {
         if(isInteger(secaoGeral.TipRegHg)){
             try{
                 int i = Integer.parseInt(secaoGeral.TipRegHg);
+
             }catch (Exception e){
                 e.getMessage();
                 listaErros.add("Linha secao: ["+secaoGeral.getTipRegHg()+"] - Esperava int e contém String - valor: "+secaoGeral.getTipRegHg());
             }
 
-            listaErros.add(("Problema no arquivo de embossing, na seção geral, no campo TipRegHg."));
+            //listaErros.add(("Problema no arquivo de embossing, na seção geral, no campo TipRegHg."));
 
         }else if(isInteger(secaoGeral.Banco)){
             try{
                 int i = Integer.parseInt(secaoGeral.Banco);
+
             }catch (Exception e){
                 e.getMessage();
                 listaErros.add("Linha secao: ["+secaoGeral.getBanco()+"] - Esperava int e contém String - valor: "+secaoGeral.getBanco());
 
             }
 
-            listaErros.add(("Problema no arquivo de embossing, na seção geral, no campo Banco."));
+            //listaErros.add(("Problema no arquivo de embossing, na seção geral, no campo Banco."));
         }else if(isInteger(secaoGeral.Nsp)){
             try{
                 int i = Integer.parseInt(secaoGeral.Nsp);

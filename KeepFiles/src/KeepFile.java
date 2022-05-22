@@ -19,10 +19,6 @@ public class KeepFile {
 
                 if(line.substring(0,1).equals("0")){ //Caso o número inicial da linha seja 0
                     SecaoGeral secaoGeral = new SecaoGeral(line);
-                    System.out.println(secaoGeral.getBanco());
-                    System.out.println(secaoGeral.getNsp());
-                    System.out.println(secaoGeral.getSistOrig());
-                    System.out.println(secaoGeral.getDtMovto());
 
                     secaoGeral.validarLinha(secaoGeral,listaErros);
                 }else if(line.substring(0,1).equals("1")){//Caso o número inicial da linha seja 1
@@ -46,7 +42,7 @@ public class KeepFile {
                     secaoTraillerGeral.validarLinha(secaoTraillerGeral, listaErros);
 
                 }else{
-                    System.out.println("Erro no arquivo na linha " + line); // Exibindo erro e imprimindo a linha que contém o erro
+                    listaErros.add("Erro no arquivo na linha " + line); // Exibindo erro e imprimindo a linha que contém o erro
                 }
 
                 line = br.readLine();
@@ -55,5 +51,16 @@ public class KeepFile {
         }catch (IOException e) {
             System.out.println("Error: " + e.getMessage());
         }
+
+        if (listaErros.isEmpty()){
+            System.out.println("========= O arquivo está validado com sucesso! =========");
+        }else {
+            for(int i = 0; i < listaErros.size(); i++) {
+                System.out.print(listaErros);
+            }
+        }
+
+
+
     }
 }
