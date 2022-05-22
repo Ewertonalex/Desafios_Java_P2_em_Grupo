@@ -637,7 +637,7 @@ public class SecaoDetalhe {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getTipRegDetalhe()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getTipRegDetalhe()+"]");
         }
 
         try{
@@ -649,7 +649,7 @@ public class SecaoDetalhe {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getModPlast()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getModPlast()+"]");
         }
 
         try{
@@ -661,7 +661,7 @@ public class SecaoDetalhe {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getKit()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getKit()+"]");
         }
 
         try{
@@ -673,7 +673,7 @@ public class SecaoDetalhe {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getSeqCart()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getSeqCart()+"]");
         }
 
         try{
@@ -685,7 +685,7 @@ public class SecaoDetalhe {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getLinha01()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getLinha01()+"]");
         }
 
         try{
@@ -697,7 +697,7 @@ public class SecaoDetalhe {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getLinha02()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getLinha02()+"]");
         }
 
         try{
@@ -709,7 +709,7 @@ public class SecaoDetalhe {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getLinha03()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getLinha03()+"]");
         }
 
         try{
@@ -721,7 +721,7 @@ public class SecaoDetalhe {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getLinha04()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getLinha04()+"]");
         }
 
         try{
@@ -733,7 +733,7 @@ public class SecaoDetalhe {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getLinhaVerso()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getLinhaVerso()+"]");
         }
 
         try{
@@ -745,7 +745,7 @@ public class SecaoDetalhe {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getTrilha01()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getTrilha01()+"]");
         }
 
         try{
@@ -757,7 +757,7 @@ public class SecaoDetalhe {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getTrilha02()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getTrilha02()+"]");
         }
 
         try{
@@ -769,7 +769,7 @@ public class SecaoDetalhe {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getTrilha03()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getTrilha03()+"]");
         }
 
         try{
@@ -781,7 +781,7 @@ public class SecaoDetalhe {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getQtdCartoes()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getQtdCartoes()+"]");
         }
 
         try{
@@ -793,7 +793,7 @@ public class SecaoDetalhe {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getNome()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getNome()+"]");
         }
 
         try{
@@ -805,7 +805,7 @@ public class SecaoDetalhe {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getDadosEndereco()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getDadosEndereco()+"]");
         }
 
         try{
@@ -817,7 +817,7 @@ public class SecaoDetalhe {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getDadosBairro()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getDadosBairro()+"]");
         }
 
         try{
@@ -829,8 +829,10 @@ public class SecaoDetalhe {
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getCidade()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getCidade()+"]");
         }
+
+
 
     }
 
