@@ -813,11 +813,11 @@ public class SecaoDetalhe {
             int i;
             for (i = 0; i<arr.length; i++)
                 if (Character.isWhitespace(arr[i])){
-                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo DadosBairro.");
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Bairro.");
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+secaoDetalhe.getDadosBairro()+"]");
+            listaErros.add("Linha secao: ["+secaoDetalhe.getBairro()+"]");
         }
 
         try{
