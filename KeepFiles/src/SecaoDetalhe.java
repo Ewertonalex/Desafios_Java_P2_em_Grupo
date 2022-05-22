@@ -761,15 +761,75 @@ public class SecaoDetalhe {
         }
 
         try{
-            char[] arr = getTrilha01().toCharArray();
+            char[] arr = getTrilha03().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
                 if (Character.isWhitespace(arr[i])){
-                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Trilha01.");
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Trilha03.");
                 }
         }catch (Exception e){
             e.getMessage();
-            listaErros.add("Linha secao: ["+SecaoDetalhe.getTrilha01()+"]");
+            listaErros.add("Linha secao: ["+SecaoDetalhe.getTrilha03()+"]");
+        }
+
+        try{
+            char[] arr = getQtdCartoes().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo QtdCartoes.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoDetalhe.getQtdCartoes()+"]");
+        }
+
+        try{
+            char[] arr = getNome().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Nome.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoDetalhe.getNome()+"]");
+        }
+
+        try{
+            char[] arr = getDadosEndereco().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo DadosEndereco.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoDetalhe.getDadosEndereco()+"]");
+        }
+
+        try{
+            char[] arr = getBairro().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo DadosBairro.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoDetalhe.getDadosBairro()+"]");
+        }
+
+        try{
+            char[] arr = getCidade().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo DadosCidade.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoDetalhe.getCidade()+"]");
         }
 
     }
