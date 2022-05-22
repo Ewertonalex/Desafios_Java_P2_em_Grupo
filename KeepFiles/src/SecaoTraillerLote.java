@@ -47,6 +47,56 @@ public class SecaoTraillerLote {
 
     public void validarLinha(SecaoTraillerLote secaoTraillerLote, ArrayList<String> listaErros){
 
+        try{
+            char[] arr = getTipReg().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoTRaillerLote, no campo TipReg.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoTraillerLote.getTipReg()+"]");
+        }
+
+        try{
+            char[] arr = getModPlast().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoTRaillerLote, no campo ModPlast.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoTraillerLote.getModPlast()+"]");
+        }
+
+        try{
+            char[] arr = getKit().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoTRaillerLote, no campo Kit.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoTraillerLote.getKit()+"]");
+        }
+
+        try{
+            char[] arr = getQtdCartLote().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoTRaillerLote, no campo QtdCartLote.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+secaoTraillerLote.getQtdCartLote()+"]");
+        }
+
+
+
     }
 
     private static boolean isInteger(String str) {
