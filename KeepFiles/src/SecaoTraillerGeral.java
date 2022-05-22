@@ -51,10 +51,6 @@ public class SecaoTraillerGeral {
             listaErros.add("Linha secao: ["+secaoTraillerGeral.getQtdCartArq()+"]");
         }
 
-
-
-
-
     }
 
     private static boolean isInteger(String str) {

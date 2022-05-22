@@ -12,7 +12,7 @@ public class SecaoGeral {
     public SecaoGeral(String linhaArquivo) {
         this.TipRegHg = linhaArquivo.substring(0,1);
         this.Banco = linhaArquivo.substring(1,5);
-        this.Nsp = linhaArquivo.substring(5,13);
+        this.Nsp = linhaArquivo.substring(5,12);
         this.SistOrig = linhaArquivo.substring(13,32);
         this. DtMovto = linhaArquivo.substring(32,40);
     }
@@ -98,7 +98,7 @@ public class SecaoGeral {
         try{
             char[] arr = getSistOrig().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<1; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoGeral, no campo SistOrig.");
                 }
@@ -110,7 +110,7 @@ public class SecaoGeral {
         try{
             char[] arr = getDtMovto().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoGeral, no campo DtMovto.");
                 }
@@ -121,10 +121,11 @@ public class SecaoGeral {
 
 
 
-
-
     }
     private static boolean isInteger(String str) {
         return str != null && str.matches("[0-9]*");
+
+
+
     }
 }

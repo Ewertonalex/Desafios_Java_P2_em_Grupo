@@ -631,7 +631,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getTipRegDetalhe().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<1; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo TipRegDetalhe.");
                 }
@@ -643,7 +643,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getModPlast().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo ModPlast.");
                 }
@@ -655,7 +655,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getKit().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Kit.");
                 }
@@ -667,7 +667,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getSeqCart().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo SeqCart.");
                 }
@@ -679,7 +679,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getLinha01().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Linha01.");
                 }
@@ -691,7 +691,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getLinha02().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Linha02.");
                 }
@@ -703,7 +703,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getLinha03().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Linha03.");
                 }
@@ -715,7 +715,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getLinha04().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Linha04.");
                 }
@@ -727,7 +727,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getLinhaVerso().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo LinhaVerso.");
                 }
@@ -739,7 +739,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getTrilha01().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Trilha01.");
                 }
@@ -751,7 +751,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getTrilha02().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Trilha02.");
                 }
@@ -764,7 +764,7 @@ public class SecaoDetalhe {
             char[] arr = getTrilha03().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Trilha03.");
                 }
         }catch (Exception e){
@@ -775,7 +775,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getQtdCartoes().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo QtdCartoes.");
                 }
@@ -787,7 +787,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getNome().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Nome.");
                 }
@@ -799,7 +799,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getDadosEndereco().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo DadosEndereco.");
                 }
@@ -811,7 +811,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getBairro().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Bairro.");
                 }
@@ -823,7 +823,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getCidade().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Cidade.");
                 }
@@ -835,7 +835,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getUf().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Uf.");
                 }
@@ -847,7 +847,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getCep().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Cep.");
                 }
@@ -859,8 +859,8 @@ public class SecaoDetalhe {
         try{
             char[] arr = getNroAr().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+            for (i = 0; i< arr.length; i++)
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo NroAr.");
                 }
         }catch (Exception e){
@@ -872,7 +872,7 @@ public class SecaoDetalhe {
             char[] arr = getCepAr().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo CepAr.");
                 }
         }catch (Exception e){
@@ -884,7 +884,7 @@ public class SecaoDetalhe {
             char[] arr = getCodRegional().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo CodRegional.");
                 }
         }catch (Exception e){
@@ -895,8 +895,8 @@ public class SecaoDetalhe {
         try{
             char[] arr = getCodAgencia().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+            for (i = 0; i< arr.length; i++)
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo CodAgencia.");
                 }
         }catch (Exception e){
@@ -908,7 +908,7 @@ public class SecaoDetalhe {
             char[] arr = getNmAbrAge().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo NmAbrAge.");
                 }
         }catch (Exception e){
@@ -920,7 +920,7 @@ public class SecaoDetalhe {
             char[] arr = getTpUorPab().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo TpUorPab.");
                 }
         }catch (Exception e){
@@ -932,7 +932,7 @@ public class SecaoDetalhe {
             char[] arr = getCodUorPab().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo CodUorPab.");
                 }
         }catch (Exception e){
@@ -944,7 +944,7 @@ public class SecaoDetalhe {
             char[] arr = getNmAbrPab().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo NmAbrPab.");
                 }
         }catch (Exception e){
@@ -956,7 +956,7 @@ public class SecaoDetalhe {
             char[] arr = getFolder().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Folder.");
                 }
         }catch (Exception e){
@@ -968,7 +968,7 @@ public class SecaoDetalhe {
             char[] arr = getCodPab().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo CodPab.");
                 }
         }catch (Exception e){
@@ -980,7 +980,7 @@ public class SecaoDetalhe {
             char[] arr = getNomeAdicional().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo NomeAdicional.");
                 }
         }catch (Exception e){
@@ -992,7 +992,7 @@ public class SecaoDetalhe {
             char[] arr = getEnderecoAge().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo EnderecoAge.");
                 }
         }catch (Exception e){
@@ -1004,7 +1004,7 @@ public class SecaoDetalhe {
             char[] arr = getBairroAge().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo BairroAge.");
                 }
         }catch (Exception e){
@@ -1016,7 +1016,7 @@ public class SecaoDetalhe {
             char[] arr = getCidadeAge().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo CidadeAge.");
                 }
         }catch (Exception e){
@@ -1028,7 +1028,7 @@ public class SecaoDetalhe {
             char[] arr = getUfAge().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo UfAge.");
                 }
         }catch (Exception e){
@@ -1040,7 +1040,7 @@ public class SecaoDetalhe {
             char[] arr = getCepAge().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo CepAge.");
                 }
         }catch (Exception e){
@@ -1052,7 +1052,7 @@ public class SecaoDetalhe {
             char[] arr = getContaCorrente().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo ContaCorrente.");
                 }
         }catch (Exception e){
@@ -1064,7 +1064,7 @@ public class SecaoDetalhe {
             char[] arr = getTm().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Tm.");
                 }
         }catch (Exception e){
@@ -1076,7 +1076,7 @@ public class SecaoDetalhe {
             char[] arr = getTemplate().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Template.");
                 }
         }catch (Exception e){
@@ -1088,7 +1088,7 @@ public class SecaoDetalhe {
             char[] arr = getTm2().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Tm2.");
                 }
         }catch (Exception e){
@@ -1099,8 +1099,8 @@ public class SecaoDetalhe {
         try{
             char[] arr = getComplemento().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+            for (i = 0; i<2; i++)
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Complemento.");
                 }
         }catch (Exception e){
@@ -1111,7 +1111,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getCodPlast().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo CodPlast.");
                 }
@@ -1123,8 +1123,8 @@ public class SecaoDetalhe {
         try{
             char[] arr = getEmpresa().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+            for (i = 0; i<2; i++)
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Empresa.");
                 }
         }catch (Exception e){
@@ -1135,8 +1135,8 @@ public class SecaoDetalhe {
         try{
             char[] arr = getFoto().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+            for (i = 0; i<2; i++)
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Foto.");
                 }
         }catch (Exception e){
@@ -1147,7 +1147,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getVlLimite().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo VlLimite.");
                 }
@@ -1159,7 +1159,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getDiaVenc().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo DiaVenc.");
                 }
@@ -1171,7 +1171,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getCodigoBarras().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo CodigoBarras.");
                 }
@@ -1183,7 +1183,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getDeficienteVisual().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<1; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo DeficienteVisual.");
                 }
@@ -1195,8 +1195,8 @@ public class SecaoDetalhe {
         try{
             char[] arr = getSenha().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+            for (i = 0; i<2; i++)
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Senha.");
                 }
         }catch (Exception e){
@@ -1207,7 +1207,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getTrilha01Icvv().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Trilha01Icvv.");
                 }
@@ -1219,7 +1219,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getTrilha02Icvv().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Trilha02Icvv.");
                 }
@@ -1232,7 +1232,7 @@ public class SecaoDetalhe {
             char[] arr = getCcrAntigo().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo CcrAntigo.");
                 }
         }catch (Exception e){
@@ -1243,7 +1243,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getCodigoCartao().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo CodigoCartao.");
                 }
@@ -1255,8 +1255,8 @@ public class SecaoDetalhe {
         try{
             char[] arr = getNomeOrigemComercial().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+            for (i = 0; i<2; i++)
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo NomeOrigemComercial.");
                 }
         }catch (Exception e){
@@ -1267,8 +1267,8 @@ public class SecaoDetalhe {
         try{
             char[] arr = getMatricula().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+            for (i = 0; i<2; i++)
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Matricula.");
                 }
         }catch (Exception e){
@@ -1280,7 +1280,7 @@ public class SecaoDetalhe {
             char[] arr = getCargo().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Cargo.");
                 }
         }catch (Exception e){
@@ -1292,7 +1292,7 @@ public class SecaoDetalhe {
             char[] arr = getDocumento().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Documento.");
                 }
         }catch (Exception e){
@@ -1304,7 +1304,7 @@ public class SecaoDetalhe {
             char[] arr = getDdd().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Ddd.");
                 }
         }catch (Exception e){
@@ -1316,7 +1316,7 @@ public class SecaoDetalhe {
             char[] arr = getTelefone().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Telefone.");
                 }
         }catch (Exception e){
@@ -1328,7 +1328,7 @@ public class SecaoDetalhe {
             char[] arr = getVago().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Vago.");
                 }
         }catch (Exception e){
@@ -1340,7 +1340,7 @@ public class SecaoDetalhe {
             char[] arr = getPanvas().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo Panvas.");
                 }
         }catch (Exception e){
@@ -1351,7 +1351,7 @@ public class SecaoDetalhe {
         try{
             char[] arr = getNumeroEndereco().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
+            for (i = 0; i<2; i++)
                 if (Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo NumeroEndereco.");
                 }
@@ -1363,8 +1363,8 @@ public class SecaoDetalhe {
         try{
             char[] arr = getComplementoEndereco().toCharArray();
             int i;
-            for (i = 0; i<arr.length; i++)
-                if (Character.isWhitespace(arr[i])){
+            for (i = 0; i<2; i++)
+                if (!Character.isWhitespace(arr[i])){
                     listaErros.add("Problema no arquivo de embossing, na seção SecaoDetalhe, no campo ComplementoEndereco.");
                 }
         }catch (Exception e){

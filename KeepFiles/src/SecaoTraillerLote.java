@@ -88,7 +88,7 @@ public class SecaoTraillerLote {
             int i;
             for (i = 0; i<arr.length; i++)
                 if (Character.isWhitespace(arr[i])){
-                    listaErros.add("Problema no arquivo de embossing, na seção SecaoTRaillerLote, no campo QtdCartLote.");
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoTraillerLote, no campo QtdCartLote.");
                 }
         }catch (Exception e){
             e.getMessage();

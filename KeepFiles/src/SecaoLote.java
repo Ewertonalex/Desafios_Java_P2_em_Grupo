@@ -153,7 +153,7 @@ public class SecaoLote {
 
     public void validarLinha(SecaoLote secaoLote, ArrayList<String> listaErros){
 
-        try{
+        /*try{
             char[] arr = getTipReg().toCharArray();
             int i;
             for (i = 0; i<arr.length; i++)
@@ -339,6 +339,6 @@ public class SecaoLote {
 
     private static boolean isInteger(String str) {
 
-        return str != null && str.matches("[0-9]*");
+        return str != null && str.matches("[0-9]*");*/
     }
 }
