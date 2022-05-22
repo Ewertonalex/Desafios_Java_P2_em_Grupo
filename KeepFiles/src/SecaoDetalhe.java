@@ -426,12 +426,12 @@ public class SecaoDetalhe {
         Tm = tm;
     }
 
-    public String getTemplete() {
+    public String getTemplate() {
         return Template;
     }
 
-    public void setTemplete(String templete) {
-        Template = templete;
+    public void setTemplate(String template) {
+        Template = template;
     }
 
     public String getTm2() {
@@ -498,12 +498,12 @@ public class SecaoDetalhe {
         CodigoBarras = codigoBarras;
     }
 
-    public String getDevicienteVisual() {
+    public String getDeficienteVisual() {
         return DeficienteVisual;
     }
 
-    public void setDevicienteVisual(String devicienteVisual) {
-        DeficienteVisual = devicienteVisual;
+    public void setDeficienteVisual(String deficienteVisual) {
+        DeficienteVisual = deficienteVisual;
     }
 
     public String getSenha() {
