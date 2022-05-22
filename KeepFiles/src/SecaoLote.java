@@ -153,6 +153,185 @@ public class SecaoLote {
 
     public void validarLinha(SecaoLote secaoLote, ArrayList<String> listaErros){
 
+        try{
+            char[] arr = getTipReg().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoLote, no campo TipReg.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoLote.getTipReg()+"]");
+        }
+
+        try{
+            char[] arr = getModeloDoPlastico().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoLote, no campo ModeloDoPlastico.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoLote.getModeloDoPlastico()+"]");
+        }
+
+        try{
+            char[] arr = getNumeroDoKit().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoLote, no campo NumeroDoKit.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoLote.getNumeroDoKit()+"]");
+        }
+
+        try{
+            char[] arr = getSeqDoLote().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoLote, no campo SeqDoLote.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoLote.getSeqDoLote()+"]");
+        }
+
+        try{
+            char[] arr = getNomeDoPlastico().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoLote, no campo NomeDoPlastico.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoLote.getNomeDoPlastico()+"]");
+        }
+
+        try{
+            char[] arr = getTipoProcessamento().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoLote, no campo TipoProcessamento.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoLote.getTipoProcessamento()+"]");
+        }
+
+        try{
+            char[] arr = getTipoMovimento().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoLote, no campo TipoMovimento.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoLote.getTipoMovimento()+"]");
+        }
+
+        try{
+            char[] arr = getTipoDoCartao().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoLote, no campo TipoDoCartao.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoLote.getTipoDoCartao()+"]");
+        }
+
+        try{
+            char[] arr = getTipoDeGravacao().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoLote, no campo TipoDeGravacao.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoLote.getTipoDeGravacao()+"]");
+        }
+
+        try{
+            char[] arr = getCorDeEntintamento().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoLote, no campo CorDeEntintamento.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoLote.getCorDeEntintamento()+"]");
+        }
+
+        try{
+            char[] arr = getTipoDeEnvelopamento().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoLote, no campo TipoDeEnvelopamento.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoLote.getTipoDeEnvelopamento()+"]");
+        }
+
+        try{
+            char[] arr = getTipoDeEnderecamento().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoLote, no campo TipoDeEnderecamento.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoLote.getTipoDeEnderecamento()+"]");
+        }
+
+        try{
+            char[] arr = getEtiquetaDeBloqueio().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoLote, no campo EtiquetaDeBloqueio.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoLote.getEtiquetaDeBloqueio()+"]");
+        }
+
+        try{
+            char[] arr = getOverlay().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoLote, no campo Overlay.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoLote.getOverlay()+"]");
+        }
+        
+        try{
+            char[] arr = getPostagem().toCharArray();
+            int i;
+            for (i = 0; i<arr.length; i++)
+                if (Character.isWhitespace(arr[i])){
+                    listaErros.add("Problema no arquivo de embossing, na seção SecaoLote, no campo Postagem.");
+                }
+        }catch (Exception e){
+            e.getMessage();
+            listaErros.add("Linha secao: ["+SecaoLote.getPostagem()+"]");
+        }
 
 
     }
