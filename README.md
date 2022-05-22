@@ -63,8 +63,8 @@ Utilizamos a plataforma ClickUp para construir o nosso quadro Kanban e acompanha
 > Sprint 2️⃣   |   Status: Concluído ✅ <br><br>
 > Sprint 3️⃣   |   Status: Concluído ✅ <br><br>
 > Sprint 4️⃣   |   Status: Concluído ✅ <br><br>
-> Sprint Review   |   Status: Á Realizar 🛑 <br><br>
-> Sprint Retrospective   |   Status: Á Realizar 🛑 <br><br>
+> Sprint Review   |   Status: Concluído ✅ <br><br>
+> Sprint Retrospective   |   Status: Concluído ✅ <br><br>
 
 ---
 
