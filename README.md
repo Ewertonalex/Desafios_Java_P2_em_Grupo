@@ -68,10 +68,6 @@ Utilizamos a plataforma ClickUp para construir o nosso quadro Kanban e acompanha
 
 ---
 
-### Sprint 01:
-
----
-
 
 <h4 align="center">
     Repositório feito pelo <a>Grupo do Projeto</a>!
